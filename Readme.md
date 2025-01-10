@@ -34,13 +34,10 @@ Simply upload an MRI scan image, and the model will analyze it to predict the tu
 
 ## Screenshots
 ### Home Screen
-![Home Screen](images/home_screen.png)
+![Home Screen](images/image1.png)
 
-### Uploading an MRI Image
-![Uploading Image](images/upload_image.png)
-
-### Prediction Results
-![Prediction Results](images/prediction_results.png)
+### Uploading an MRI Image and Predicting Results
+![Uploading Image](images/image2.png)
 
 ---
 
