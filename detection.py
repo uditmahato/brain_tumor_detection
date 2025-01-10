@@ -68,7 +68,11 @@ uploaded_file = st.file_uploader("Choose an MRI scan image (JPG, PNG, JPEG)", ty
 if uploaded_file:
     # Display uploaded image
     image = Image.open(uploaded_file).convert("RGB")  # Convert image to RGB
-    st.image(image, caption="Uploaded MRI Scan", use_column_width=True)
+
+    # Resize image to desired dimensions (width x height)
+    resized_image = image.resize((150, 150)) 
+
+    st.image(resized_image, caption="Uploaded MRI Scan", use_column_width=False)
 
     # Preprocess and predict
     with st.spinner("Analyzing the image..."):
